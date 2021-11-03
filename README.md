@@ -4,3 +4,5 @@ A django application focused in create a course platform where the owner can man
 This application will use CI, TDD aproach, Twelve Factor App, Postgresql, Many to One and Many to Many relationships;
 
 [![Build Status](https://app.travis-ci.com/JoaoZati/django_devpro.svg?branch=main)](https://app.travis-ci.com/JoaoZati/django_devpro)
+[![Updates](https://pyup.io/repos/github/JoaoZati/django_devpro/shield.svg)](https://pyup.io/repos/github/JoaoZati/django_devpro/)
+[![Python 3](https://pyup.io/repos/github/JoaoZati/django_devpro/python-3-shield.svg)](https://pyup.io/repos/github/JoaoZati/django_devpro/)
