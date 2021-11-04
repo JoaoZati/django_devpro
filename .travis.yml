@@ -18,6 +18,7 @@ install:
 script:
   - pipenv run flake8 .
   - pipenv run pytest --cov
+  - cp .env.example .env
 
 after_success:
   - pipenv run codecov
