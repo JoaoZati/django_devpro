@@ -10,6 +10,7 @@ codecov = "*"
 pytest-cov = "*"
 python-decouple = "*"
 pytest = "*"
+gunicorn = "*"
 
 [dev-packages]
 flake8 = "*"
