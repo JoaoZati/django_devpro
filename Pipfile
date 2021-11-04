@@ -16,6 +16,7 @@ psycopg2-binary = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
 django-s3-folder-storage = "*"
+collectfast = "*"
 
 [dev-packages]
 flake8 = "*"
