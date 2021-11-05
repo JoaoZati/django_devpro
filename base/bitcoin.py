@@ -12,7 +12,7 @@ def convert_brl_btc(amount):
     usd_blr = c.get_rate('USD', 'BRL')
     btc_usd = float(response_json['data']['amount'])
     btc_brl = ((amount - 20) / (usd_blr * btc_usd))
-    
+
     return round(btc_brl, 5)
 
 
