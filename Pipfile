@@ -17,6 +17,9 @@ django-debug-toolbar = "*"
 sentry-sdk = "*"
 django-s3-folder-storage = "*"
 collectfast = "*"
+django-qr-code = "*"
+forex-python = "*"
+requests = "*"
 
 [dev-packages]
 flake8 = "*"

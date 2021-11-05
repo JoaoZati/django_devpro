@@ -1,5 +1,6 @@
 {% extends "base/base.html" %}
 {% load static %}
+{% load qr_code %}
 {% block title %}Python Pro - Home{% endblock %}
 {% block content %}
 <div class="container">
@@ -11,8 +12,17 @@
                     Python Course with Luciano Ramalho
                 </h2>
                 <p>
-                    Check out soon more information about the course that will be taught by the author of the book
-                    <a href="http://shop.oreilly.com/product/0636920032519.do" target="_blank">Fluent Python</a>
+                    <!-- INICIO DO BOTAO PAGSEGURO -->
+                    <h4 class="mt-4">Sing in! Cost of the Bootcamp is R$ 1000,00</h4>
+                    <h6 class="mt-4">For Brazilians pay with Pag Seguro</h6>
+                    <a c target="_blank" title="Pagar com PagSeguro">
+                        <img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                    </a>
+                    <!-- FIM DO BOTAO PAGSEGURO -->
+                    <h6 class="mt-4">For who don't live in Brazil or want some privacy we accept Bitcoin. (Total Amount without fees {{ btc_price }} BTC)</h6>
+                {% qr_from_text "bc1qj72vz98dtpgznxc6gr5ag08q484cmdk7dz3n30" size="m" %}
+                    <h6 class="mt-4">(Obs: this application is for learning purpose only, <a style="color: red">don't send any money! There's no Course!</a> Any doubt send
+                        a email to <a href="mailto:joaozati@gmail.com">joaozati@gmail.com</a>)</h6>
                 </p>
             </div>
         </div>
