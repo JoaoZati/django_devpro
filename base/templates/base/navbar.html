@@ -1,7 +1,7 @@
 {% load static %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ '/' }}">
+        <a class="navbar-brand" href="{% url 'base:home' %}">
             <img src="{% static 'img/favicon.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
             Python Pro
         </a>
