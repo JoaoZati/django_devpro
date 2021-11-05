@@ -1,0 +1,45 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Python Pro - Home{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-secondary ml-2 mr-2 mb-5" style="--bs-bg-opacity: .30">
+
+            <div class="jumbotron mt-5 mb-5">
+                <h2>
+                    Python Course with Luciano Ramalho
+                </h2>
+                <p>
+                    Check out soon more information about the course that will be taught by the author of the book
+                    <a href="http://shop.oreilly.com/product/0636920032519.do" target="_blank">Fluent Python</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <h5 class="card-header">
+                    More details about instructor
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        <img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto de Luciano Ramalho"
+                             class="img-thumbnail float-start me-3"/>
+                        Luciano Ramalho is CEO and professor at <a href="https://pythonpro.com.br/">Python Pro</a> and writer
+                        of the book Fluent Python.
+                        He was technical director of Brasil Online, abril S/A's first web portal.
+                        He has led teams for the Portals IDG Now, BOL, UOL, AOL Brasil and others, using Python
+                        since 1998. As an instructor, he served clients such as Citibank, CPqD, Serpro, Globo.com
+                        and Itaú. Speaker at international events such as FISL, PyCon US and OSCON.
+                        It helped create the Python Brazil Association and was its president. He is
+                        a member of the Python Software Foundation and founder of The Garoa Hacker Club, the first
+                        hackerspace in Brazil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
