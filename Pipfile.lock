@@ -360,11 +360,10 @@
         },
         "segno": {
             "hashes": [
-                "sha256:2052d1fec957eee652a3785fe7c00e76099eeb6b189723e98eb2829351a2cb30",
-                "sha256:505766f18c935f606097dc02280aa9cd28f21b3395ebf33292999af9e9d8f138"
+                "sha256:00e6db1fbe82aa2010b3af5fc10f4f9524b76e2877190b0f3895e992fcb6fc88",
+                "sha256:d6b4e4512fa5cb32d2f988584d20e2e4d1daa97587cd5421cb705da994f3d65b"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
-            "version": "==1.3.3"
+            "version": "==1.4.0"
         },
         "sentry-sdk": {
             "hashes": [
