@@ -19,7 +19,8 @@ from main import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('base.urls'))
+    path('', include('base.urls')),
+    path('demonstration/', include('demonstration.urls'))
 ]
 
 if settings.DEBUG:
