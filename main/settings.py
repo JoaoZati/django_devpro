@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'qr_code',
     'base',
+    'demonstration',
 ]
 
 MIDDLEWARE = [

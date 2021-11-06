@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class DemostrationConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'demostration'
+    name = 'demonstration'
