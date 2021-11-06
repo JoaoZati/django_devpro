@@ -1,20 +1,26 @@
 import pytest
+from model_mommy import mommy
 from django.urls import reverse
-
+from demonstration.models import Video
 from main.django_assertions import assert_contains
 
 
 @pytest.fixture
-def resp(client):
-    return client.get(reverse('demonstration:video', args=('motivacao',)))
+def video(db):
+    return mommy.make(Video)
+
+
+@pytest.fixture
+def resp(client, video):
+    return client.get(reverse('demonstration:video', args=(video.slug,)))
 
 
 def test_status_code(resp):
     assert resp.status_code == 200
 
 
-def test_title_video(resp):
-    assert_contains(resp, '<h1 class="mt-4 mb-3">Demonstration Video: Motivation</h1>')
+def test_title_video(resp, video):
+    assert_contains(resp, video.title)
 
 
 def test_content_video(resp):
