@@ -3,6 +3,7 @@
 {% block title %}{{module.title}}{% endblock title %}
 {% block content %}
     <div class="container">
+        {% for module in modules %}
         <div class="row">
             <div class="col-md-12">
                 <h1 class="mt-4 mb-3">{{ module.title}}</h1>
@@ -14,11 +15,12 @@
                 </dl>
                 <h2>Lessons</h2>
                 <ol>
-                    {% for lesson in lessons %}
-                        <li>{{ lesson.title }}</li>
+                    {% for lesson in module.lesson_set.all %}
+                        <li><a href="{{ lesson.get_absolute_url }}">{{ lesson.title }}</a></li>
                     {% endfor %}
                 </ol>
             </div>
         </div>
+        {% endfor %}
     </div>
 {% endblock content %}

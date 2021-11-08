@@ -22,3 +22,7 @@ def list_modules_ordered_lessons(module: Module):
 
 def find_lesson(slug):
     return Lesson.objects.select_related('module').get(slug=slug)
+
+
+def list_modules_and_lessons():
+    return Module.objects.order_by('order').all()

@@ -22,4 +22,7 @@ def lessons(request, slug):
 
 
 def index(request):
-    return render(request, 'modules/modules_index.html')
+    context = {
+        'modules': facade.list_modules_and_lessons()
+    }
+    return render(request, 'modules/modules_index.html', context)
