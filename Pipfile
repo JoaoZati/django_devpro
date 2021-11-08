@@ -20,6 +20,7 @@ collectfast = "*"
 django-qr-code = "*"
 forex-python = "*"
 requests = "*"
+django-ordered-model = "*"
 
 [dev-packages]
 flake8 = "*"
