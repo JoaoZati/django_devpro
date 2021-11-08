@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'qr_code',
     'base',
     'demonstration',
-    'modules'
+    'modules',
+    'ordered_model',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'modules.context_processors.list_modules',
             ],
         },
     },
