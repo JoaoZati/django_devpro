@@ -19,3 +19,10 @@ def lessons(request, slug):
         'lesson': lesson
     }
     return render(request, 'modules/lesson_details.html', context)
+
+
+def index(request):
+    context = {
+        'modules': facade.list_modules_and_lessons()
+    }
+    return render(request, 'modules/modules_index.html', context)
