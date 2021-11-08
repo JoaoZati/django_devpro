@@ -5,5 +5,6 @@ from modules import views
 app_name = 'modules'
 urlpatterns = [
     path('<slug:slug>', views.details, name='details'),
-    path('lessons/<slug:slug>', views.lessons, name='lesson')
+    path('lessons/<slug:slug>', views.lessons, name='lesson'),
+    path('', views.index, name='index'),
 ]

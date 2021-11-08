@@ -19,3 +19,7 @@ def lessons(request, slug):
         'lesson': lesson
     }
     return render(request, 'modules/lesson_details.html', context)
+
+
+def index(request):
+    return render(request, 'modules/modules_index.html')
