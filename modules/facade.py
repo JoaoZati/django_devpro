@@ -21,4 +21,4 @@ def list_modules_ordered_lessons(module: Module):
 
 
 def find_lesson(slug):
-    return Lesson.objects.get(slug=slug)
+    return Lesson.objects.select_related('module').get(slug=slug)
