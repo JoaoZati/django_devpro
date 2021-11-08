@@ -25,4 +25,4 @@ def find_lesson(slug):
 
 
 def list_modules_and_lessons():
-    return Module.objects.order_by('order').all()
+    return Module.objects.order_by('order').prefetch_related('lesson_set').all()
