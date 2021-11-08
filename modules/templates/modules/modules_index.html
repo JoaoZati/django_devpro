@@ -15,7 +15,7 @@
                 </dl>
                 <h2>Lessons</h2>
                 <ol>
-                    {% for lesson in module.lesson_set.all %}
+                    {% for lesson in module.lessons %}
                         <li><a href="{{ lesson.get_absolute_url }}">{{ lesson.title }}</a></li>
                     {% endfor %}
                 </ol>

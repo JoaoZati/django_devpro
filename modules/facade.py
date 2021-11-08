@@ -2,6 +2,8 @@ from typing import List
 
 from modules.models import Module, Lesson
 
+from django.db.models import Prefetch
+
 
 def list_modules_ordered() -> List[Module]:
     """
@@ -25,4 +27,7 @@ def find_lesson(slug):
 
 
 def list_modules_and_lessons():
-    return Module.objects.order_by('order').prefetch_related('lesson_set').all()
+    ordered_lessons = Lesson.objects.order_by('order')
+    return Module.objects.order_by('order').prefetch_related(
+        Prefetch('lesson_set', queryset=ordered_lessons, to_attr='lessons')
+    ).all()
