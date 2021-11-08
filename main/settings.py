@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'demonstration',
     'modules',
     'ordered_model',
+    'classes',
 ]
 
 MIDDLEWARE = [

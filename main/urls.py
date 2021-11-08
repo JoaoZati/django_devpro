@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('base.urls')),
     path('demonstration/', include('demonstration.urls')),
     path('modules/', include('modules.urls')),
+    path('classes/', include('classes.urls'))
 ]
 
 if settings.DEBUG:
