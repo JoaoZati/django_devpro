@@ -20,3 +20,8 @@ def resp(client, modules):
 def test_modules_titles(resp, modules):
     for module in modules:
         assert_contains(resp, module.title)
+
+
+# def test_link_modules(resp, modules):
+#     for module in modules:
+#         assert_contains(resp, module.get_absolute_url())
