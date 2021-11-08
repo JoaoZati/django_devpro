@@ -16,7 +16,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         {% for module in MODULES %}
-                        <li><a class="dropdown-item" href="#">{{ module.title }}</a></li>
+                        <li><a class="dropdown-item" href="{{ module.get_absolute_url }}">{{ module.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>

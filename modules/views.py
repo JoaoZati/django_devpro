@@ -1,3 +1,11 @@
-from django.shortcuts import render # noqa
+from django.shortcuts import render
 
-# Create your views here.
+from modules import facade
+
+
+def details(request, slug):
+    module = facade.find_module(slug)
+    context = {
+        'module': module,
+    }
+    return render(request, 'modules/module_details.html', context)
