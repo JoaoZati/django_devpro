@@ -11,3 +11,11 @@ def details(request, slug):
         'lessons': lessons,
     }
     return render(request, 'modules/module_details.html', context)
+
+
+def lessons(request, slug):
+    lesson = facade.find_lesson(slug)
+    context = {
+        'lesson': lesson
+    }
+    return render(request, 'modules/lesson_details.html', context)

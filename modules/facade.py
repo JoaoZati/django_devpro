@@ -1,6 +1,6 @@
 from typing import List
 
-from modules.models import Module
+from modules.models import Module, Lesson
 
 
 def list_modules_ordered() -> List[Module]:
@@ -18,3 +18,7 @@ def find_module(slug):
 
 def list_modules_ordered_lessons(module: Module):
     return list(module.lesson_set.order_by('order').all())
+
+
+def find_lesson(slug):
+    return Lesson.objects.get(slug=slug)
