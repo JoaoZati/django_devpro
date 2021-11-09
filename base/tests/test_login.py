@@ -2,7 +2,7 @@ import pytest
 from django.urls import reverse
 from model_mommy import mommy
 
-from main.django_assertions import assert_contains
+from main.django_assertions import assert_contains, assert_not_contains
 
 
 @pytest.fixture
@@ -45,3 +45,16 @@ def test_button_login_home(resp_home):
 
 def test_link_login_home(resp_home):
     assert_contains(resp_home, reverse('login'))
+
+
+@pytest.fixture
+def resp_home_logged_user(client_user_logged, db):
+    return client_user_logged.get(reverse('base:home'))
+
+
+def test_button_login_home_logged_user(resp_home_logged_user):
+    assert_not_contains(resp_home_logged_user, 'Login')
+
+
+def test_link_login_home_logged_user(resp_home_logged_user):
+    assert_not_contains(resp_home_logged_user, reverse('login'))
