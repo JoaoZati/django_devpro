@@ -42,6 +42,11 @@ LOGIN_URL = '/accounts/login/'
 # Application definition
 
 INSTALLED_APPS = [
+    'base',
+    'qr_code',
+    'demonstration',
+    'modules',
+    'classes',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,12 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'qr_code',
-    'base',
-    'demonstration',
-    'modules',
     'ordered_model',
-    'classes',
 ]
 
 MIDDLEWARE = [
