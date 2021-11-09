@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.contrib.auth.decorators import login_required
 from modules import facade
 
 
@@ -13,6 +13,7 @@ def details(request, slug):
     return render(request, 'modules/module_details.html', context)
 
 
+@login_required
 def lessons(request, slug):
     lesson = facade.find_lesson(slug)
     context = {
