@@ -58,3 +58,11 @@ def test_button_login_home_logged_user(resp_home_logged_user):
 
 def test_link_login_home_logged_user(resp_home_logged_user):
     assert_not_contains(resp_home_logged_user, reverse('login'))
+
+
+def test_button_logout(resp_home_logged_user):
+    assert_contains(resp_home_logged_user, reverse('logout'))
+
+
+def test_username_logged_user(resp_home_logged_user, user_logged):
+    assert_contains(resp_home_logged_user, user_logged.first_name)
