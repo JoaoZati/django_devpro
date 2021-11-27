@@ -169,11 +169,10 @@
         },
         "django-qr-code": {
             "hashes": [
-                "sha256:4292f4fe59fb40838a8f6e8c5c913a772a6bf8c9ce0f263a770ade797b4babdc",
-                "sha256:fa6732645cb4f1573b0c0dd9a585334cdb3f178df9ccf8c96a68a0f1eaecb3da"
+                "sha256:58c8a46b91086cd7eaed3e29298c7e0f499ace0c0329dd97b02243a0afa475a4",
+                "sha256:61c589ed3d48c1ac7b11997d3a3b3e4418d786406171dea87d891934cd56d80a"
             ],
-            "index": "pypi",
-            "version": "==2.2.0"
+            "version": "==3.0.0"
         },
         "django-s3-folder-storage": {
             "hashes": [
