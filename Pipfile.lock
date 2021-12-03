@@ -192,11 +192,10 @@
         },
         "forex-python": {
             "hashes": [
-                "sha256:b402f7bae4909bd3f6cc0579cf6236a37b4e8e3043775bb741da7bb6c7f99604",
-                "sha256:e50c5f952c489885236ce229217bdd489f2722428d4b103973c413244ba21af5"
+                "sha256:7d4a5c36b66e7ef9ee515f607a41249a1ae1a2499a9e011702b66f784325cc76",
+                "sha256:8e6b375ad1f15b90a15d95ef8156651fae8487075dd007d2b7dd8efad8f44e41"
             ],
-            "index": "pypi",
-            "version": "==1.6"
+            "version": "==1.8"
         },
         "gunicorn": {
             "hashes": [
