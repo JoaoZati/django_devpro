@@ -168,12 +168,8 @@
             "version": "==3.4.3"
         },
         "django-qr-code": {
-            "hashes": [
-                "sha256:4292f4fe59fb40838a8f6e8c5c913a772a6bf8c9ce0f263a770ade797b4babdc",
-                "sha256:fa6732645cb4f1573b0c0dd9a585334cdb3f178df9ccf8c96a68a0f1eaecb3da"
-            ],
-            "index": "pypi",
-            "version": "==2.2.0"
+            "hashes": [],
+            "version": "==4.0.1"
         },
         "django-s3-folder-storage": {
             "hashes": [
