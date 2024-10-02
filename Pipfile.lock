@@ -459,11 +459,8 @@
             "version": "==0.10.2"
         },
         "tomli": {
-            "hashes": [
-                "sha256:c6ce0015eb38820eaf32b5db832dbc26deb3dd427bd5f6556cf0acac2c214fee",
-                "sha256:f04066f68f5554911363063a30b108d2b5a5b1a010aa8b6132af78489fe3aade"
-            ],
-            "version": "==1.2.2"
+            "hashes": [],
+            "version": "==2.0.2"
         },
         "typing-extensions": {
             "hashes": [
